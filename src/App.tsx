@@ -1,7 +1,12 @@
 import React from "react";
+import Todo from './components/Todo';
 
 const App: React.FC = () => {
-    return <h1>Hello React App</h1>;
+    return (
+        <div>
+            <Todo></Todo>
+        </div>
+    );
 };
 
 export default App;
