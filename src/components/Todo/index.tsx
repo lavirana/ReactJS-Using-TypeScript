@@ -16,7 +16,7 @@ const Todo: React.FC<TodoProps> = (props) => {
         <div className='todo-container' >
             <ol>
               {
-                props.items.map((item) => ( <TodoItem title={item.title} />
+                props.items.map((item) => ( <TodoItem key={item.id} title={item.title} />
             ))}
             </ol>
         </div>
@@ -24,3 +24,4 @@ const Todo: React.FC<TodoProps> = (props) => {
 }
 
 export default Todo;
+
